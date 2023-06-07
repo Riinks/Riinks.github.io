@@ -11,7 +11,7 @@
     left: 40%;
     height: 100;
     width: 100;
-    color: #06ffc9;
+    color: #6791DB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@
     content: '';
     height: 3px;
     width: 0%;
-    background: #06ffc9;
+    background: #6791DB;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -89,7 +89,7 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #06ffc9;
+    border: 2px solid #6791DB;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -97,7 +97,7 @@ button{
     overflow: hidden;
 }
 span{
-    background: #06ffc9;
+    background: #6791DB;
     height: 100%;
     width: 0%;
     border-radius: 25px;
@@ -113,4 +113,10 @@ button:hover span{
 button:hover{
     border: none;
 }
-
+.content a{
+    display:block;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+}

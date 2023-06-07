@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
     <link rel="stylesheet" href="Contact.css">
+    
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -18,10 +19,10 @@
             </ul>
         </div>
     <div class="content">
-        <h1 style="color: #06ffc9;">Gmail</h1>
-        <h2>do not</h2>
-        <h1 style="color: #06ffc9;">Discord</h1>
-        <h2>Rinks#4171</h2>
+        <h1 style="color: #53DB51;">Gmail</h1>
+        <a href="Contact.html" id="gmail" onclick="copyElementText('gmail')">ringoounapuu@gmail.com</a>
+        <h1 style="color: #53DB51;">Discord</h1>
+        <a href="Contact.html" id="dc" onclick="copyElementText('dc')">Rinks#4171</a>
     </div>
     <div class="topText">
         <h1>Contact Information</h1>
@@ -29,7 +30,17 @@
 
 
 
-
+    <script>
+        function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
+    </script>
 
 
 </body>
